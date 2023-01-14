@@ -1,0 +1,144 @@
+/* player section done */
+.players img{
+height: 56px;
+width: 56px;
+
+}
+.top-player{
+  margin: 0 auto;
+    width: 870px;
+    height: 279px;
+    border: 1px solid red;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+   
+    grid-template-rows: repeat(2,100px);
+}
+.info{
+    display: flex;
+    gap:10px;
+    /* border: 1px solid red; */
+   align-items: center;
+   justify-content: center;
+}
+/* player section ende */
+/* blog sectiom start */
+.top-blog{
+    width: 870px;
+    height: 279px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: 200px 200px;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    gap: 15px;
+}
+.blog img{
+    width: 177px;
+    height:117px ;
+}
+/* blog end */
+/* lates course start */
+.courses{
+
+width: 870px;
+height: 352px;
+margin: 0 auto;
+}
+.cdivs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px;
+   
+}
+.courses img{
+width: 224px;
+height: 104px;
+}
+/* for phone */
+@media only screen and (max-width: 688px) {
+    .top-player{
+        background-color: red;
+        height: 100%;
+        width:100%;
+       
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        /* height: auto;
+        width: auto; */
+    }
+    .info{
+        flex-direction: column;
+        gap: 0;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    .blog{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .blog img{
+    
+    }
+    .top-blog{
+        width: 100%;
+        height: 100%;
+    }
+  
+    .img-info h1{
+        font-size: 17px;
+    }
+    .cdivs{
+        grid-template-columns: repeat(1,1fr);
+        
+
+    }
+    .courses{
+        width: 100%;
+        height: 100%;
+    }
+    .course{
+      margin: 20px auto;
+      
+    }
+   
+}
+
+
+
+
+/* for tablet */
+@media only screen and (min-width:687px) and (max-width:992px) {
+    .top-player{
+        width: 100%;
+        height: 100%;
+    }
+    .players ,{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 100px;
+    }
+    .top-blog , .courses{
+      
+    }
+    .cdivs{
+        grid-template-columns: repeat(2,1fr); 
+        gap: 25px;
+    }
+}
